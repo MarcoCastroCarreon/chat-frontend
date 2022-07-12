@@ -1,1 +1,5 @@
-html, body { overflow-x:hidden; }
+@mixin query($media: 325px) {
+    @media (min-width: $media) {
+        @content
+    }
+  } 

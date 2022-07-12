@@ -1,4 +1,17 @@
+@import './globals';
+
 .home_container {
   margin: 10px;
   max-width: 100%;
+  text-align: end;
+
+  &-form_container_row {
+    @include query($media: 768px) {
+      margin-top: 40px;
+    }
+
+    @include query($media: 1024px) {
+      margin-top: 200px;
+    }
+  }
 }
